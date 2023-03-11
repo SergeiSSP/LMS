@@ -12,3 +12,6 @@ class Group(models.Model):
         verbose_name='Beginning',
     )
     description = models.TextField()
+
+    def __str__(self):
+        return f'{self.name_of_group} {self.date_of_start}'
