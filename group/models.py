@@ -15,3 +15,6 @@ class Group(models.Model):
 
     def __str__(self):
         return f'{self.name_of_group} {self.date_of_start}'
+
+    class Meta:
+        db_table = 'groups'
